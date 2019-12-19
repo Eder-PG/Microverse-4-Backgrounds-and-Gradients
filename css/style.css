@@ -1,0 +1,45 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    height: 100vh;
+    max-height: 1605px;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+article{
+    box-sizing: border-box;
+    flex-grow: 1;    
+    width: 1440px;
+    min-width: 1000px;    
+    margin: 0 auto;
+    background-image: url(../assets/your_verse_hero.jpg);
+    background-size: 1440px 1315px;
+    background-position: bottom;
+    background-repeat: no-repeat;
+
+    border: 1px solid black;
+}
+
+aside{    
+    box-sizing: border-box;
+    height: 200px;
+    width: 1440px;
+    min-width: 1000px;
+    margin: 0 auto;
+
+    border: 1px solid black;
+}
+
+footer{
+    box-sizing: border-box;
+    height: 90px;
+    width: 1440px;
+    min-width: 1000px;
+    margin: 0 auto;
+
+    border: 1px solid black;
+}
