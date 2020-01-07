@@ -82,6 +82,7 @@ footer{
 
 nav{
     position: absolute;
+    display: flex;
     top: 83px;
     left: 50%;
     margin-left: -490px;
@@ -94,23 +95,26 @@ nav{
         rgba(0, 0, 0, 0) 97%, rgba(0, 0, 0, .45) 100%),
         url("../assets/nav-background.png"),
         linear-gradient(#666 0%, #5e5e5e 50%, #707070 51%, #808080 100%);
+    text-align: center;
 }
 
-nav ul{
-    box-sizing: border-box;
-    display: table;
-    float: left;
-    width: 845px;
-    margin: 0;
-    padding: 0;
-}
-
-nav li{
-    box-sizing: border-box;
-    display: table-cell;
+nav a{    
     height: 36px;
-    width: 12%;
-    
+    width: 105px;
+    border-image: url("../assets/nav-border.png") 0 2 0 1;
+    border-width: 0 2px 0 1px;
+    border-style: solid;
+}
+
+nav a:hover{
+    border-radius: 4px;    
+    background-image: 
+    radial-gradient(rgba(0, 0, 0, .6) 0%, rgba(0, 0, 0, 0) 90%, rgba(0, 0, 0, 0) 100%),
+    linear-gradient(#666 0%, #5e5e5e 50%, #707070 51%, #808080 100%);
+}
+
+nav img{
+    margin: 3px 0;
 }
 
 
