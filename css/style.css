@@ -77,5 +77,62 @@ footer{
     max-width: 1440px;
     min-width: 1000px;
     margin: 0 auto;
-    border: 1px solid black;
+    
 }
+
+nav{
+    position: absolute;
+    top: 83px;
+    left: 50%;
+    margin-left: -490px;
+    border-radius: 4px;
+    height: 36px;
+    width: 980px;
+    box-shadow: #888 0 1px 2px;
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, .2) 0%, rgba(0, 0, 0, 0) 5%,
+        rgba(0, 0, 0, 0) 97%, rgba(0, 0, 0, .45) 100%),
+        url("../assets/nav-background.png"),
+        linear-gradient(#666 0%, #5e5e5e 50%, #707070 51%, #808080 100%);
+}
+
+nav ul{
+    box-sizing: border-box;
+    display: table;
+    float: left;
+    width: 845px;
+    margin: 0;
+    padding: 0;
+}
+
+nav li{
+    box-sizing: border-box;
+    display: table-cell;
+    height: 36px;
+    width: 12%;
+    
+}
+
+
+
+
+
+
+
+
+
+    /*    
+    background: 
+    -webkit-gradient(linear, 0 0, 0 100%, from(rgba(0, 0, 0, .2)), 
+    color-stop(0.05, rgba(0, 0, 0, 0)), 
+    color-stop(0.97, rgba(0, 0, 0, 0)), 
+    to(rgba(0, 0, 0, .45))), 
+    -webkit-gradient(linear, 0 0, 100% 0, from(rgba(0, 0, 0, .2)), 
+    color-stop(0.002, rgba(0, 0, 0, 0)),
+    color-stop(0.998, rgba(0, 0, 0, 0)), 
+    to(rgba(0, 0, 0, .2))), 
+    url('') no-repeat 50% 50%, 
+    -webkit-gradient(linear, 0 100%, 0 0, from(#666), 
+    color-stop(0.5, #5e5e5e), color-stop(0.51, #707070), 
+    to(#808080));    
+    */
