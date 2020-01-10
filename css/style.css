@@ -76,8 +76,7 @@ footer{
     width: 100%;
     max-width: 1440px;
     min-width: 1000px;
-    margin: 0 auto;
-    
+    margin: 0 auto;    
 }
 
 nav{
@@ -95,21 +94,24 @@ nav{
         rgba(0, 0, 0, 0) 97%, rgba(0, 0, 0, .45) 100%),
         url("../assets/nav-background.png"),
         linear-gradient(#666 0%, #5e5e5e 50%, #707070 51%, #808080 100%);
-    text-align: center;
+    text-align: center;   
+     
 }
 
 nav a{    
-    height: 36px;
-    width: 105px;
+    max-width: 105px;
+    min-width: 65px;
     border-image: url("../assets/nav-border.png") 0 2 0 1;
     border-width: 0 2px 0 1px;
-    border-style: solid;
+    border-style: solid;    
+    flex-grow: 1;
+    
 }
 
 nav a:hover{
     border-radius: 4px;    
     background-image: 
-    radial-gradient(rgba(0, 0, 0, .6) 0%, rgba(0, 0, 0, 0) 90%, rgba(0, 0, 0, 0) 100%),
+    radial-gradient(rgba(0, 0, 0, .7) 0%, rgba(0, 0, 0, 0) 95%, rgba(0, 0, 0, 0) 100%),
     linear-gradient(#666 0%, #5e5e5e 50%, #707070 51%, #808080 100%);
 }
 
@@ -117,26 +119,45 @@ nav img{
     margin: 3px 0;
 }
 
+.search-box{
+    width: 100px;
+    height: 20px;
+    margin: 8px 20px;
+    display: flex;    
+    border-radius: 12px;
+    box-shadow: 0 2px 1px #444 inset, 0 1px 0 #aaa;
+    background-color: rgba(255, 255, 255, 0.1);
+    flex-grow: 1;
+    transition: all 0.5s;
+}
 
+.search-box input{
+    height: 14px; 
+    width: 70px;
+    border: none;
+    background: none;
+    margin-top: 3px;
+    font-size: 12px;       
+}
 
+.search-box i{
+    font-size: 12px;
+    padding: 4px;
+    color: #eee;
+    text-shadow: 1px 1px #444;
+}
 
+.search-box input:focus{
+    box-shadow: 0 2px 1px #222 inset
+    width: 120px;    
+}
 
+.search-box:focus-within{
+    width: 160px;
+    background: #eee;
+    
+}
 
-
-
-
-    /*    
-    background: 
-    -webkit-gradient(linear, 0 0, 0 100%, from(rgba(0, 0, 0, .2)), 
-    color-stop(0.05, rgba(0, 0, 0, 0)), 
-    color-stop(0.97, rgba(0, 0, 0, 0)), 
-    to(rgba(0, 0, 0, .45))), 
-    -webkit-gradient(linear, 0 0, 100% 0, from(rgba(0, 0, 0, .2)), 
-    color-stop(0.002, rgba(0, 0, 0, 0)),
-    color-stop(0.998, rgba(0, 0, 0, 0)), 
-    to(rgba(0, 0, 0, .2))), 
-    url('') no-repeat 50% 50%, 
-    -webkit-gradient(linear, 0 100%, 0 0, from(#666), 
-    color-stop(0.5, #5e5e5e), color-stop(0.51, #707070), 
-    to(#808080));    
-    */
+.search-box:focus-within i{
+    color: #888;
+}
