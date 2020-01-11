@@ -15,7 +15,9 @@ Replicating a landing page from Apple
 
 - https://github.com/Eder-PG/Microverse-4-Backgrounds-and-Gradients
 
+## Live Version
 
+- https://eder-pg.github.io/Microverse-4-Backgrounds-and-Gradients/
 
 ## Author
 
