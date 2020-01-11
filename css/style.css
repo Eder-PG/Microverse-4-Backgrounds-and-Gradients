@@ -5,6 +5,7 @@ body {
 
 .main-container {
   height: 100vh;
+  min-height: 720px;
   max-height: 1605px;
   min-width: 1000px;
   display: flex;
